@@ -1,0 +1,45 @@
+body{
+	font-family:"Lucida Grande", arial, sans-serif;
+}
+#topbar {
+	z-index: 99999;
+	position:fixed;
+	width: 100%;
+}
+
+#topbar ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#topbar li{
+	width:16.66%;
+	height:50px;
+	float:left;
+	color:#191919;
+	text-align:center;
+	overflow:hidden;
+}
+
+#topbar a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#topbar p{
+	padding:0px 5px;
+}
+
+.subtext{
+	padding-top:15px;
+	color: #fff;
+}
+
+/*Menu Color Classes*/
+.green{background:#6AA63B url('../img/green-item-bg.jpg') top left no-repeat;}
+.yellow{background:#FBC700 url('../img/yellow-item-bg.jpg') top left no-repeat;}
+.red{background:#D52100 url('../img/red-item-bg.jpg') top left no-repeat;}
+.purple{background:#5122B4 url('../img/purple-item-bg.jpg') top left no-repeat;}
+.blue{background:#0292C0 url('../img/blue-item-bg.jpg') top left no-repeat;}
+.black{background:#000 url('../img/black-item-bg.jpg') top left no-repeat;}
