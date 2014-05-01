@@ -6,9 +6,9 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3 class="header smaller lighter blue">Edit Story</h3>
+                    <h3 class="header smaller lighter blue">Edit Work</h3>
                     
-                    {{Form::model($story, array('class'=>'form-horizontal'))}}
+                    {{Form::model($work, array('class'=>'form-horizontal'))}}
                     <div class="form-group">
                         <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Title </label>
 
@@ -24,10 +24,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Image </label>
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Category </label>
 
                         <div class="col-sm-9">
-                            {{Form::text('img')}}
+                            {{Form::select('category_id', Category::lists('name', 'id'))}}
                         </div>
                     </div>
                     <div class="form-group">

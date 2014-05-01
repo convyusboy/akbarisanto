@@ -8,34 +8,39 @@
     <div id="bg2-color-1"></div>
   </div>
 
-  <div id="filters" class="button-group">  
-    <label>filter : </label>
-    <button data-filter='*'>show all</button>
-    <button data-filter='musicCategory'>music</button>
-    <button data-filter='webCategory'>web</button>
-    <button data-filter='gameCategory'>game</button>
+  <div id="buttonContainer">
+
+    <div id="filters" class="button-group">  
+      <h6>filters : </h6>
+      <button data-filter='*' class="button small red">show all</button>
+      <button data-filter='musicCategory' class="button small red">music</button>
+      <button data-filter='webCategory' class="button small red">web</button>
+      <button data-filter='gameCategory' class="button small red">game</button>
+    </div>
+    <div id="sorts" class="button-group">  
+      <h6>sorts : </h6>
+      <button data-sort-by='original-order' class="button small red rounded">original order</button>
+      <button data-sort-by='work_title' class="button small red rounded">work title</button>
+      <button data-sort-by='work_content' class="button small red rounded">work content</button>
+    </div>    
   </div>
-  <div id="sorts" class="button-group">  
-    <label>sort : </label>
-    <button data-sort-by='original-order'>original order</button>
-    <button data-sort-by='work_title'>work title</button>
-    <button data-sort-by='work_content'>work content</button>
-  </div>
+
   <div id="container">
-    <?php foreach ($works as $work) { ?>
-    <div class="item">
+    <?php foreach ($works as $work) { $cat = Category::find($work->category_id)->name; ?>
+    <div class="item {{$cat}}">
       <div class="work_created">
-          {{$work->created_at}}
+        {{$work->created_at}}
       </div>
+      <br>
       <div class="work_title">
-          {{$work->title}}
+        {{$work->title}}
       </div>
       <br>
       <div class="work_content">
-          {{$work->content}}
+        {{$work->content}}
       </div>
       <div class="category">
-          {{$work->category_id}}
+        {{$work->category_id}}
       </div>
     </div>
     <?php } ?>

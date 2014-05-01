@@ -10,12 +10,15 @@
 	<meta name="Resource-type" content="Document" />
 
 	<link rel="stylesheet" media="all" href="{{asset('assets/css/main.css')}}" />
+	<link rel="stylesheet" media="all" href="{{asset('assets/css/buttons.css')}}" />
 	<link rel="stylesheet" media="all" href="{{asset('assets/css/animated-menu.css')}}" />
 	<link rel="stylesheet" media="all" href="{{asset('assets/css/social-buttons.css')}}" />
 	<!-- <link rel="stylesheet" type="text/css" href="{{asset('assets/css/jquery.booklet.latest.css')}}"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="{{asset('assets/css/akbarisanto.css')}}"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="{{asset('assets/css/fixed-positioning.css')}}"> -->
-
+	<!-- 
+	<script src="{{asset('assets/js/parallax.js')}}"></script>
+ -->
 	<script src="{{asset('assets/js/modernizr.custom.37797.js')}}"></script> 
 	<script src="{{asset('assets/js/jquery.min.js')}}"></script>
 	<script src="{{asset('assets/js/jquery-2.1.0.min.js')}}"></script>
@@ -24,7 +27,6 @@
 	<script src="{{asset('assets/js/jquery.easing.1.3.js')}}"></script>
 	<script src="{{asset('assets/js/jquery.booklet.latest.min.js')}}"></script>	
 	<script src="{{asset('assets/js/skrollr.min.js')}}"></script>	
-	<script src="{{asset('assets/js/parallax.js')}}"></script>
 	<script src="{{asset('assets/js/animated-menu.js')}}"></script>
 
     <link href="{{asset('assets/booklet/jquery.booklet.1.1.0.css')}}" type="text/css" rel="stylesheet" media="screen" />

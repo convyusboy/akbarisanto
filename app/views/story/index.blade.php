@@ -14,7 +14,8 @@
         <?php foreach ($stories as $story) { ?>
 
         <div>
-          <img src="{{asset('assets/images/'.$story->img)}}" alt=""/>
+          <!-- <?php if ($story->img == "") ?> -->
+          <img src="{{asset('assets/images/'.$story->img)}}" alt="{{asset('assets/images/default.jpg')}}"/>
           <h1>{{$story->title}}</h1>
           <p>{{$story->content}}</p>
           <a href="http://tympanus.net/codrops/2010/10/07/slider-gallery/" target="_blank" class="article">Article</a>

@@ -1,81 +1,44 @@
-@extends('layouts.master')
+@extends('layouts.admin')
 
 @section('content')
+<div class="page-content">
+	<div class="page-header">
+		<h1>
+			Dashboard
+			<small>
+				<i class="icon-double-angle-right"></i>
+			</small>
+		</h1>
+	</div><!-- /.page-header -->
 
-<div class="row">
-	<div class="col-xs-12">
-		<div class="row">
-			<div class="col-xs-12">
-				<h3 class="header smaller lighter blue">Work List</h3>
-				<div class="table-responsive">
-					<table id="sample-table-2" class="table table-striped table-bordered table-hover">
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>Title</th>
-								<th>Content</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php foreach ($works as $work) { ?>
-							<tr>
-								<td>{{$work->id}}</td>
-								<td>{{$work->title}}</td>
-								<td>{{$work->content}}</td>
-							</tr>
-							<?php } ?>
-						</tbody>
-					</table>
-				</div>
-				<div class="form-group">
-					<a href={{url('/admin/work')}} >
-						<button class="btn">
-							Create Work
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div><!-- /.col -->
-</div><!-- /.row -->
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- PAGE CONTENT BEGINS -->
 
-<div class="row">
-	<div class="col-xs-12">
-		<div class="row">
-			<div class="col-xs-12">
-				<h3 class="header smaller lighter blue">Story List</h3>
-				<div class="table-responsive">
-					<table id="sample-table-2" class="table table-striped table-bordered table-hover">
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>Title</th>
-								<th>Content</th>
-								<th></th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php foreach ($stories as $story) { ?>
-							<tr>
-								<td>{{$story->id}}</td>
-								<td>{{$story->title}}</td>
-								<td>{{$story->content}}</td>
-							</tr>
-							<?php } ?>
-						</tbody>
-					</table>
-				</div>
-				<div class="form-group">
-					<a href={{url('/admin/work')}} >
-						<button class="btn">
-							Create Story
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div><!-- /.col -->
-</div><!-- /.row -->
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="widget-box transparent">
+						<div class="widget-header widget-header-flat">
+							<h4 class="lighter">
+								<i class="icon-star orange"></i>
+								Menu Utama
+							</h4>
 
-<a href="{{url('admin/logout')}}">Logout</a>
+						</div>
+
+						<div class="widget-body">
+							<a href="{{url('admin/work')}}" class="btn btn-lg"><span class="glyphicon glyphicon-book"></span><br> Work</a> 
+							<a href="{{url('admin/story')}}" class="btn btn-lg"><span class="glyphicon glyphicon-user"></span><br> Story</a> 
+							<a href="{{url('admin/gallery')}}" class="btn btn-lg"><span class="glyphicon glyphicon-envelope"></span><br> Gallery</a> 
+						</div>
+					</div><!-- /widget-box -->
+
+				</div><!-- /span -->
+			</div><!-- /row -->
+
+			<!-- PAGE CONTENT ENDS -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+</div>
+
+@stop

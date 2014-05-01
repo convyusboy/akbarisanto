@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.admin')
 
 @section('content')
 
@@ -14,6 +14,8 @@
                 <th>ID</th>
                 <th>Title</th>
                 <th>Content</th>
+                <th>Image</th>
+                <th>Button</th>
                 <th></th>
               </tr>
             </thead>
@@ -23,6 +25,8 @@
                 <td>{{$story->id}}</td>
                 <td>{{$story->title}}</td>
                 <td>{{$story->content}}</td>
+                <td>{{$story->img}}</td>
+                <td><a href="{{url('/admin/story/update/'.$story->id)}}">Edit</a> <a href="{{url('/admin/story/delete/'.$story->id)}}">Delete</a></td>
               </tr>
               <?php } ?>
             </tbody>
@@ -40,4 +44,3 @@
   </div><!-- /.col -->
 </div><!-- /.row -->
 
-<a href="{{url('admin/logout')}}">Logout</a>

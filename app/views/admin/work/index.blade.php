@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.admin')
 
 @section('content')
 
@@ -12,8 +12,10 @@
             <thead>
               <tr>
                 <th>ID</th>
+                <th>Category</th>
                 <th>Title</th>
                 <th>Content</th>
+                <th>Button</th>
                 <th></th>
               </tr>
             </thead>
@@ -21,15 +23,17 @@
               <?php foreach ($works as $work) { ?>
               <tr>
                 <td>{{$work->id}}</td>
+                <td>{{Category::find($work->category_id)->name}}</td>
                 <td>{{$work->title}}</td>
                 <td>{{$work->content}}</td>
+                <td><a href="{{url('/admin/work/update/'.$work->id)}}">Edit</a> <a href="{{url('/admin/work/delete/'.$work->id)}}">Delete</a></td>
               </tr>
               <?php } ?>
             </tbody>
           </table>
         </div>
         <div class="form-group">
-          <a href={{url('/admin/work')}} >
+          <a href={{url('/admin/work/create')}} >
             <button class="btn">
               Create Work
             </button>
@@ -39,5 +43,3 @@
     </div>
   </div><!-- /.col -->
 </div><!-- /.row -->
-
-<a href="{{url('admin/logout')}}">Logout</a>

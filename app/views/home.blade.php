@@ -158,4 +158,6 @@
  -->
 </div>
 
+<script src="{{asset('assets/js/parallax.js')}}"></script>
+
 @stop
