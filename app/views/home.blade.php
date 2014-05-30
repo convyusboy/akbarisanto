@@ -4,14 +4,14 @@
 
 <div id="wrapper">
 
- 	<div id="bg1-group">
- 		<div id="bg1-color-1"></div>
- 		<div id="bg1-color-2"></div>
- 		<div id="bg1-color-3"></div>
- 		<div id="bg1-color-4"></div>
- 		<div id="bg1-color-5"></div>
- 		<div id="bg1-color-6"></div>
- 		<div id="bg1-color-7"></div>
+ 	<div id="bg-group">
+ 		<div id="bg1" class="dblue2"></div>
+ 		<div id="bg2" class="lblue2"></div>
+ 		<div id="bg3" class="green2"></div>
+ 		<div id="bg4" class="yellow2"></div>
+ 		<div id="bg5" class="purple2"></div>
+ 		<div id="bg6" class="pink2"></div>
+ 		<div id="bg7" class="white2"></div>
  	</div>
 
 	<nav id="primary">
@@ -29,8 +29,8 @@
 				<a class="story" href="#story">View</a>
 			</li>
 			<li>
-				<h1>Gallery</h1>
-				<a class="gallery" href="#gallery">View</a>
+				<h1>Collection</h1>
+				<a class="collection" href="#collection">View</a>
 			</li>
 			<li>
 				<h1>About</h1>
@@ -79,13 +79,13 @@
 			<nav class="next-prev">
 				<a class="prev work" href="#work">Prev</a>
 				<hr />
-				<a class="next gallery" href="#gallery">Next</a>
+				<a class="next collection" href="#collection">Next</a>
 			</nav>
 		</article>
 
-		<article id="gallery">
+		<article id="collection">
 			<header>
-				<h1>Gallery</h1>
+				<h1>Collection</h1>
 			</header>
 			<p>These are all of my stuffs. I mean not all like all, but all that I want to show you.</p>
 			<nav class="next-prev">
@@ -101,7 +101,7 @@
 			</header>
 			<p>This is all about me.</p>
 			<nav class="next-prev">
-				<a class="prev gallery" href="#gallery">Prev</a>
+				<a class="prev collection" href="#collection">Prev</a>
 				<hr />
 				<a class="next contact" href="#contact">Next</a>
 			</nav>
@@ -140,22 +140,42 @@
 	</div>
  -->
 	<!-- Parallax  midground clouds -->
-<!-- 	<div id="parallax-bg2">
+	<div id="parallax-bg2">
 		<img id="bg2-1" src="{{asset('assets/img/cloud-lg1.png')}}" alt="cloud"/>
 		<img id="bg2-2" src="{{asset('assets/img/cloud-lg1.png')}}" alt="cloud"/>
 		<img id="bg2-3" src="{{asset('assets/img/cloud-lg1.png')}}" alt="cloud"/>
 		<img id="bg2-4" src="{{asset('assets/img/cloud-lg1.png')}}" alt="cloud"/>
 		<img id="bg2-5" src="{{asset('assets/img/cloud-lg1.png')}}" alt="cloud"/>
 	</div>
- -->
+
 	<!-- Parallax  background clouds -->
-<!-- 	<div id="parallax-bg1">
+	<div id="parallax-bg1">
 		<img id="bg1-1" src="{{asset('assets/img/cloud-lg2.png')}}" alt="cloud"/>
 		<img id="bg1-2" src="{{asset('assets/img/cloud-lg2.png')}}" alt="cloud"/>
 		<img id="bg1-3" src="{{asset('assets/img/cloud-lg2.png')}}" alt="cloud"/>
 		<img id="bg1-4" src="{{asset('assets/img/cloud-lg2.png')}}" alt="cloud"/>
 	</div>
- -->
+
+	<!-- Parallax  background planes -->
+	<div id="parallax-bg4">
+		<img id="bg4-1" src="{{asset('assets/img/plane2.png')}}" alt="plane"/>
+		<img id="bg4-2" src="{{asset('assets/img/plane2.png')}}" alt="plane"/>
+	</div>
+
+	<!-- Parallax  background planes -->
+	<div id="parallax-bg6">
+		<img id="bg6-3" src="{{asset('assets/img/plane1.png')}}" alt="plane"/>
+		<img id="bg6-4" src="{{asset('assets/img/plane1.png')}}" alt="plane"/>
+	</div>
+
+	<!-- Parallax  background planes -->
+	<div id="parallax-bg5">
+		<img id="bg5-1" src="{{asset('assets/img/plane3.png')}}" alt="plane"/>
+		<!-- <img id="bg5-2" src="{{asset('assets/img/plane3.png')}}" alt="plane"/> -->
+		<img id="bg5-3" src="{{asset('assets/img/plane3.png')}}" alt="plane"/>
+		<img id="bg5-4" src="{{asset('assets/img/plane3.png')}}" alt="plane"/>
+	</div>
+
 </div>
 
 <script src="{{asset('assets/js/parallax.js')}}"></script>

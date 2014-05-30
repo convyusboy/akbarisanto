@@ -27,6 +27,7 @@
    	font-size: 100%;
    	font: inherit;
    	vertical-align: baseline;
+	font-family: Papyrus, fantasy;
    }
    /* HTML5 display-role reset for older browsers */
    article, aside, details, figcaption, figure, 
@@ -59,17 +60,15 @@ html {
 	overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 body {
-	background: #e3e5e5;
-	/*overflow-x: hidden;*/
 	height: 100%;
 	min-height: 100%;
 	line-height: 1.5;
-	color: #000;
+	/*color: #000;*/
 	font-size: 14px;
 	font-family: Arial,sans-serif;
 }
 h1 {
-	color: #fff;
+	color: #000;
 }
 a, a:link,
 a:active,
@@ -78,7 +77,7 @@ a:visited {
 	-moz-transition: color 0.25s ease-out;
 	-o-transition: color 0.25s ease-out;
 	transition: color 0.25s ease-out;
-	color:#21a97e;
+	color:#5C726B;
 	outline: none;
 	text-decoration:none;
 }
@@ -175,7 +174,6 @@ a.next:hover {
 
 /* content */
 #content {
-	z-index: 4;
 	/*position: relative;*/
 	max-width: 940px;
 	padding: 0 10px;
@@ -183,12 +181,13 @@ a.next:hover {
 	line-height: 1.7;
 }
 #content article {
+	z-index: 20;
 	width: 300px;
 }
 #welcome ,
 #work,
 #story,
-#gallery,
+#collection,
 #about,
 #contact,
 #bye {
@@ -206,7 +205,7 @@ a.next:hover {
 	position: absolute;
 	top: 1536px;
 }
-#gallery {
+#collection {
 	position: absolute;
 	top: 2304px;
 }
@@ -225,8 +224,8 @@ a.next:hover {
 #content h1 {
 	margin: 0 0 25px 0;
 	font-size: 60px;
-	font-family: Georgia, serif;
-	font-weight: normal;
+	/*font-family: Georgia, serif;*/
+	font-weight: bold;
 	line-height: 65px;
 }
 /* foreground (ballons/landscape) */
@@ -271,27 +270,27 @@ a.next:hover {
 #bg2-1 {
 	position: absolute;
 	top: 162px;
-	left: 200px;
+	left: 250px;
 }
 #bg2-2 {
 	position: absolute;
 	top: 300px;
-	left: 1150px;
+	left: 1200px;
 }
 #bg2-3 {
 	position: absolute;
 	top: 543px;
-	left: -35px;
+	left: 15px;
 }
 #bg2-4 {
 	position: absolute;
 	top: 1180px;
-	left: 250px;
+	left: 300px;
 }
 #bg2-5 {
 	position: absolute;
 	top: 900px;
-	left: 890px;
+	left: 940px;
 }
 /* background (clouds) */
 #parallax-bg1 {
@@ -305,149 +304,175 @@ a.next:hover {
 #bg1-1 {
 	position: absolute;
 	top: 85px;
-	left: -270px;
+	left: -220px;
 }
 #bg1-2 {
 	position: absolute;
 	top: 440px;
-	left: 795px;
+	left: 855px;
 }
 #bg1-3 {
 	position: absolute;
 	top: 900px;
-	left: -220px;
+	left: -170px;
 }
 #bg1-4 {
 	position: absolute;
+	top: 1420px;
+	left: 300px;
+}
+/* background (plane) */
+#parallax-bg4 {
+	z-index: 0;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+}
+#bg4-1 {
+	position: absolute;
+	top: 600px;
+	left: 0px;
+}
+#bg4-2 {
+	position: absolute;
+	top: 140px;
+	left: 1005px;
+}
+#bg4-3 {
+	position: absolute;
+	top: 430px;
+	left: -100px;
+}
+#bg4-4 {
+	position: absolute;
 	top: 1020px;
-	left: 450px;
+	left: -600px;
 }
 
-/*HOMEPAGE BACKGROUND*/
+/* background (plane) */
+#parallax-bg5 {
+	z-index: 10;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -700px;
+}
+#bg5-1 {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+#bg5-2 {
+	position: absolute;
+	top: -500px;
+	left: 300px;
+}
+#bg5-3 {
+	position: absolute;
+	top: -900px;
+	left: 1200px;
+}
+#bg5-4 {
+	position: absolute;
+	top: -1300px;
+	left: 777px;
+}
 
+/* background (plane) */
+#parallax-bg6 {
+	z-index: 0;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -700px;
+}
+#bg6-1 {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+#bg6-2 {
+	position: absolute;
+	top: -500px;
+	left: 300px;
+}
+#bg6-3 {
+	position: absolute;
+	top: -900px;
+	left: 1200px;
+}
+#bg6-4 {
+	position: absolute;
+	top: -1300px;
+	left: 777px;
+}
+
+/*background color 0*/
+#bg0 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
 /*background color 1*/
-#bg1-color-1 {
+#bg1 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 768px;
-	background: #6AA63B;
 }
 /*background color 2*/
-#bg1-color-2 {
+#bg2 {
 	position: absolute;
 	top: 768px;
 	left: 0px;
 	width: 100%;
-	height: 768px;
-	background: #FBC700;
+	height: 768px;	
 }
 /*background color 3*/
-#bg1-color-3 {
+#bg3 {
 	position: absolute;
 	top: 1536px;
 	left: 0px;
 	width: 100%;
 	height: 768px;
-	background: #D52100;
 }
 /*background color 4*/
-#bg1-color-4 {
+#bg4 {
 	position: absolute;
 	top: 2304px;
 	left: 0px;
 	width: 100%;
 	height: 768px;
-	background: #0292C0;
 }
 /*background color 5*/
-#bg1-color-5 {
+#bg5 {
 	position: absolute;
 	top: 3072px;
 	left: 0px;
 	width: 100%;
 	height: 768px;
-	background: #5122B4;
 }
 /*background color 6*/
-#bg1-color-6 {
+#bg6 {
 	position: absolute;
 	top: 3840px;
 	left: 0px;
 	width: 100%;
 	height: 768px;
-	background: #000;
 }
 /*background color 7*/
-#bg1-color-7 {
+#bg7 {
 	position: absolute;
 	top: 4608px;
 	left: 0px;
 	width: 100%;
 	height: 768px;
-	background: #fff url('../img/bg-color-7.png');
-	background-size: 100% 768px;
-}
-
-/*WORKPAGE BACKGROUND*/
-
-/*background color 1*/
-#bg2-color-1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5376px;
-	background: #FBC700;
-}
-
-/*STORYPAGE BACKGROUND*/
-
-/*background color 1*/
-#bg3-color-1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5376px;
-	background: #D52100;
-}
-
-/*GALLERYPAGE BACKGROUND*/
-
-/*background color 1*/
-#bg4-color-1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5376px;
-	background: #0292C0;
-}
-
-/*ABOUTPAGE BACKGROUND*/
-
-/*background color 1*/
-#bg5-color-1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5376px;
-	background: #5122B4;
-}
-
-/*CONTACTPAGE BACKGROUND*/
-
-/*background color 1*/
-#bg6-color-1 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 5376px;
-	background: #000000;
 }
 
 /*filters*/
@@ -478,75 +503,102 @@ a.next:hover {
 	font-family: Garamond,sans-serif;
 }
 .music{
-	background: #FF4500;
+	background: #4A9586;
 }
 .game{
-	background: #FF8000;
+	background: #5EAE9E;
 }
 .web{
-	background: #880000;
+	background: #74BAAC;
 }
 .item .work_title{
 	font-size: 20px;
 	text-transform: capitalize;
 	text-align: center;
 }
-/*contact-group*/
-#contact-group {
-	z-index: 5;
-	position: absolute;;
-	top:50px;
-}
-
-#contact-group ul{
-	margin:0;
-}
-
-#contact-group li{
-	display: inline;
-}
-
-#contact-group a{
-	text-decoration:none;
-}
-
-#contact-group p{
-	padding:0px 5px;
-}
-
-.contact-type {
-	color: #eee;
-	font-weight: 100;
-	font-family: 'Orienta', sans-serif;   
-}
-
 #buttonContainer{
-	/*border:1px solid #F4F4F4;*/
-	/*margin:10px;*/
-	/*overflow:hidden;*/
-	
 	padding:10px;
 	width:500px;
-	
-/*	-moz-box-shadow:0 0 10px #C4C4C4;
-	-webkit-box-shadow:0 0 10px #C4C4C4;
-	box-shadow:0 0 10px #C4C4C4;
-*/}
-
-#buttonContainer button{
-	/*float:left;*/
-	/*margin:10px;*/
 }
 
 #buttonContainer h6{
+	font-family: Papyrus, fantasy;
+	font-weight: 800;
 	font-size: 20px;
-	/*font-family: Times New, sans-serif;*/
+	color: #4A9586;
 }
 
 #content2 {
 	position:absolute;
-	left:100px;
-	top:150px;	
-	padding:10px;
-	width:800px;
+	left:10%;
+	top:30%;	
+	/*padding:10px;*/
+	width:60%;
 }
+#aboutme {
+	position:absolute;
+	top:20%;
+	left: 70%;
+	height: 200px;
+	width: auto;
+}
+
+#topbar {
+	z-index: 99;
+	position:fixed;
+	width: 100%;
+	font-family: Papyrus, fantasy;
+}
+
+#topbar ul{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#topbar li{
+	width:16.66%;
+	height:50px;
+	float:left;
+	text-align:center;
+	overflow:hidden;
+}
+
+#topbar a{
+	color:#FFF;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+#topbar p{
+	padding:0px 5px;
+}
+
+.subtext{
+	padding-top:15px;
+	color: #fff;
+}
+
+/*#AAAAFF #9999FF
+#BBDAFF #A8CFFF
+#C0FF97 #ABFF73
+#FFF284 #FFF06A
+#C4ABFE #B89AFE
+#FFBBF7 #FEA9F3
+#8C8CFF
+*/
+/*url('../img/green-item-bg.jpg') no-repeat*/
+/*Menu Color Classes*/
+.dblue1{background:#AAAAFF;}
+.lblue1{background:#BBDAFF;}
+.green1{background:#C0FF97;}
+.yellow1{background:#FFF284;}
+.purple1{background:#C4ABFE;}
+.pink1{background:#FFBBF7;}
+.dblue2{background: #BBBBFF;}
+.lblue2{background: #D0E6FF;}
+.green2{background: #D1FFB3;}
+.yellow2{background: #FFF7B7;}
+.purple2{background: #D0BCFE;}
+.pink2{background: #FFCAF9;}
+.white2{background: #FFFFFF;}

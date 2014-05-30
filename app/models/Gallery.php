@@ -7,7 +7,7 @@ class Gallery extends Eloquent {
 		 *
 		 * @var string
 		 */
-		protected $table = 'galleries	';
+		protected $table = 'galleries';
 
 		/**
 		 * The attributes excluded from the model's JSON form.

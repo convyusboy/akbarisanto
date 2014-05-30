@@ -1,6 +1,3 @@
-body{
-	font-family:"Lucida Grande", arial, sans-serif;
-}
 #topbar {
 	z-index: 99999;
 	position:fixed;
@@ -36,10 +33,17 @@ body{
 	color: #fff;
 }
 
+/*#AAAAFF #9999FF
+#BBDAFF #A8CFFF
+#C0FF97 #ABFF73
+#FFF284 #FFF06A
+#C4ABFE #B89AFE
+#FFBBF7 #FEA9F3*/
+/*url('../img/green-item-bg.jpg') no-repeat*/
 /*Menu Color Classes*/
-.green{background:#6AA63B url('../img/green-item-bg.jpg') top left no-repeat;}
-.yellow{background:#FBC700 url('../img/yellow-item-bg.jpg') top left no-repeat;}
-.red{background:#D52100 url('../img/red-item-bg.jpg') top left no-repeat;}
-.purple{background:#5122B4 url('../img/purple-item-bg.jpg') top left no-repeat;}
-.blue{background:#0292C0 url('../img/blue-item-bg.jpg') top left no-repeat;}
-.black{background:#000 url('../img/black-item-bg.jpg') top left no-repeat;}
+.dblue1{background:#AAAAFF;}
+.lblue1{background:#BBDAFF;}
+.green1{background:#C0FF97;}
+.yellow1{background:#FFF284;}
+.purple1{background:#C4ABFE;}
+.pink1{background:#FFBBF7;}

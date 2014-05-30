@@ -4,24 +4,23 @@
 
 <div id="wrapper">
 
-  <div id="bg2-group">
-    <div id="bg2-color-1"></div>
+  <div id="bg-group">
+    <div id="bg1" class="lblue2"></div>
   </div>
 
   <div id="buttonContainer">
-
     <div id="filters" class="button-group">  
       <h6>filters : </h6>
-      <button data-filter='*' class="button small red">show all</button>
-      <button data-filter='musicCategory' class="button small red">music</button>
-      <button data-filter='webCategory' class="button small red">web</button>
-      <button data-filter='gameCategory' class="button small red">game</button>
+      <button data-filter='*' class="button small blue">show all</button>
+      <button data-filter='musicCategory' class="button small blue">music</button>
+      <button data-filter='webCategory' class="button small blue">web</button>
+      <button data-filter='gameCategory' class="button small blue">game</button>
     </div>
     <div id="sorts" class="button-group">  
       <h6>sorts : </h6>
-      <button data-sort-by='original-order' class="button small red rounded">original order</button>
-      <button data-sort-by='work_title' class="button small red rounded">work title</button>
-      <button data-sort-by='work_content' class="button small red rounded">work content</button>
+      <button data-sort-by='original-order' class="button small blue rounded">original order</button>
+      <button data-sort-by='work_title' class="button small blue rounded">work title</button>
+      <button data-sort-by='work_content' class="button small blue rounded">work content</button>
     </div>    
   </div>
 

@@ -9,7 +9,7 @@ $(document).ready(function(){
 	
 	//When mouse rolls over
 	$("#topbar li").mouseover(function(){
-		$(this).stop().animate({height:'150px'},{queue:false, duration:600, easing: 'easeOutBounce'})
+		$(this).stop().animate({height:'100px'},{queue:false, duration:600, easing: 'easeOutBounce'})
 	});
 	
 	//When mouse is removed

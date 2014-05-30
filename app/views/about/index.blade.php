@@ -4,12 +4,13 @@
 
 <div id="wrapper">
 
-	<div id="bg5-group">
-		<div id="bg5-color-1"></div>
+	<div id="bg-group">
+		<div id="bg1" class="purple2"></div>
 	</div>
 
+	<img id="aboutme" src="{{asset('assets/img/about.jpg')}}">
 	<div id="content2">
-		<h1>ABOUT</h1>
+		<h1>ABOUT ME</h1>
 		<div>
 			<p>Hello! My name is Ridho Akbarisanto. I'm a developer and programmer. I'm still learning to develop everything in my own way.</p>
 			<p>

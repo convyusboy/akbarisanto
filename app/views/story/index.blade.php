@@ -2,8 +2,8 @@
 
 @section('content')
 <div id="wrapper">
-  <div id="bg3-group">
-    <div id="bg3-color-1"></div>
+  <div id="bg-group">
+    <div id="bg1" class="green2"></div>
   </div>
   <div class="book_wrapper">
     <a id="next_page_button"></a>
@@ -14,15 +14,20 @@
         <?php foreach ($stories as $story) { ?>
 
         <div>
-          <!-- <?php if ($story->img == "") ?> -->
-          <img src="{{asset('assets/images/'.$story->img)}}" alt="{{asset('assets/images/default.jpg')}}"/>
+          <img src="{{asset('assets/uploads/story/'.$story->img)}}" alt="{{asset('assets/images/default.jpg')}}"/>
           <h1>{{$story->title}}</h1>
           <p>{{$story->content}}</p>
-          <a href="http://tympanus.net/codrops/2010/10/07/slider-gallery/" target="_blank" class="article">Article</a>
-          <a href="http://tympanus.net/Tutorials/SliderGallery/" target="_blank" class="demo">Demo</a>
+          <a href="{{url('story/view/'.$story->id)}}" class="ajax-popup-link demo">More</a>
         </div>
 
         <?php } ?>
+        <script type="text/javascript">
+          $('.ajax-popup-link').magnificPopup({
+            type: 'ajax',
+            alignTop: true,
+            overflowY: 'scroll'
+          });
+        </script>
 
       </div>
     </div>
@@ -30,8 +35,10 @@
 
 </div>
 <!-- The JavaScript -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
-
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script> -->
+<!-- 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+ -->
 <script src="{{asset('assets/booklet/jquery.easing.1.3.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/booklet/jquery.booklet.1.1.0.min.js')}}" type="text/javascript"></script>
 

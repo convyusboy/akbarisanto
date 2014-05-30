@@ -21,4 +21,10 @@ class StoryController extends BaseController {
         return View::make('story.index')->with('stories', $stories);
 	}
 
+    public function getView($id) {
+    	$story = Story::find($id);
+        if ($story == null) return App::abort(404);
+        return View::make('story.view')->with('story', $story);
+    }
+
 }

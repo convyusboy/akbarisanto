@@ -19,7 +19,7 @@ class AdminGalleryController extends BaseController {
 	{
         $galleries = Gallery::all();
         return View::make('admin.gallery.index')->with('galleries', $galleries);
-	}
+    }
 
     public function getView($id) {
     	$gallery = Gallery::find($id);
@@ -53,9 +53,24 @@ class AdminGalleryController extends BaseController {
     }
 
     public function postCreate() {
-        $input = Input::all();
-        $gallery = new Gallery($input);
-        $gallery->save();
+        // $input = Input::all();
+
+        $filename = Input::get('name');
+        $file = Input::get('file'); // your file upload input field in the form should be named 'file'
+
+        $destinationPath = 'uploads/gallery';
+        // $filename = $file->getClientOriginalName();
+        //$extension =$file->getClientOriginalExtension(); //if you need extension of the file
+        $uploadSuccess = Input::file('file')->move($destinationPath, $filename);
+         
+        if( $uploadSuccess ) {
+           return Response::json('success', 200); // or do a redirect with some message that file was uploaded
+        } else {
+           return Response::json('error', 400);
+        }
+
+        // $gallery = new Gallery($input);
+        // $gallery->save();
         return Redirect::to('/admin/gallery/index');
-    }
+   }
 }

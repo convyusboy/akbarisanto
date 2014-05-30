@@ -11,6 +11,40 @@ Version: 1.0
 /************************************************************************************
 SOCIAL LINK a.sb
 *************************************************************************************/
+/*contact-group*/
+#contact-group {
+	z-index: 5;
+	position: absolute;
+	top:20%;
+	left:30%;
+	width: 40%;	
+}
+
+#contact-group ul{
+	margin:0;
+	text-align: center;
+}
+
+#contact-group li{
+	display: inline;
+}
+
+#contact-group a{
+	text-decoration:none;
+	color: #FFFFFF;
+}
+
+.contact-type {
+	padding:20px; 
+	text-align: center;
+	color: #9669FE;
+	font-family: Papyrus, fantasy;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+
+
 a.sb,
 .sb a {
 	width: 32px;
@@ -774,6 +808,8 @@ a.sb.blue.twitter,
 .sb.blue a.twitter,
 a.sb.purple.twitter,
 .sb.purple a.twitter,
+a.sb.light-purple.twitter,
+.sb.light-purple a.twitter,
 a.sb.red.twitter,
 .sb.red a.twitter,
 a.sb.green.twitter,
@@ -793,6 +829,8 @@ a.sb.blue.facebook,
 .sb.blue a.facebook,
 a.sb.purple.facebook,
 .sb.purple a.facebook,
+a.sb.light-purple.facebook,
+.sb.light-purple a.facebook,
 a.sb.red.facebook,
 .sb.red a.facebook,
 a.sb.green.facebook,
@@ -831,6 +869,8 @@ a.sb.blue.linkedin,
 .sb.blue a.linkedin,
 a.sb.purple.linkedin,
 .sb.purple a.linkedin,
+a.sb.light-purple.linkedin,
+.sb.light-purple a.linkedin,
 a.sb.red.linkedin,
 .sb.red a.linkedin,
 a.sb.green.linkedin,
@@ -958,6 +998,90 @@ a.sb.black.vimeo,
 a.sb.gray.vimeo,
 .sb.gray a.vimeo {
 	background-image: url('../images/white_vimeo.png');
+}
+
+a.sb.blue.github,
+.sb.blue a.github,
+a.sb.purple.github,
+.sb.purple a.github,
+a.sb.light-purple.github,
+.sb.light-purple a.github,
+a.sb.red.github,
+.sb.red a.github,
+a.sb.green.github,
+.sb.green a.github,
+a.sb.orange.github,
+.sb.orange a.github,
+a.sb.brown.github,
+.sb.brown a.github,
+a.sb.black.github,
+.sb.black a.github,
+a.sb.gray.github,
+.sb.gray a.github {
+	background-image: url('../images/white_github.png');
+}
+
+a.sb.blue.instagram,
+.sb.blue a.instagram,
+a.sb.purple.instagram,
+.sb.purple a.instagram,
+a.sb.light-purple.instagram,
+.sb.light-purple a.instagram,
+a.sb.red.instagram,
+.sb.red a.instagram,
+a.sb.green.instagram,
+.sb.green a.instagram,
+a.sb.orange.instagram,
+.sb.orange a.instagram,
+a.sb.brown.instagram,
+.sb.brown a.instagram,
+a.sb.black.instagram,
+.sb.black a.instagram,
+a.sb.gray.instagram,
+.sb.gray a.instagram {
+	background-image: url('../images/white_instagram.png');
+}
+
+a.sb.blue.soundcloud,
+.sb.blue a.soundcloud,
+a.sb.purple.soundcloud,
+.sb.purple a.soundcloud,
+a.sb.light-purple.soundcloud,
+.sb.light-purple a.soundcloud,
+a.sb.red.soundcloud,
+.sb.red a.soundcloud,
+a.sb.green.soundcloud,
+.sb.green a.soundcloud,
+a.sb.orange.soundcloud,
+.sb.orange a.soundcloud,
+a.sb.brown.soundcloud,
+.sb.brown a.soundcloud,
+a.sb.black.soundcloud,
+.sb.black a.soundcloud,
+a.sb.gray.soundcloud,
+.sb.gray a.soundcloud {
+	background-image: url('../images/white_soundcloud.png');
+}
+
+a.sb.blue.bitbucket,
+.sb.blue a.bitbucket,
+a.sb.purple.bitbucket,
+.sb.purple a.bitbucket,
+a.sb.light-purple.bitbucket,
+.sb.light-purple a.bitbucket,
+a.sb.red.bitbucket,
+.sb.red a.bitbucket,
+a.sb.green.bitbucket,
+.sb.green a.bitbucket,
+a.sb.orange.bitbucket,
+.sb.orange a.bitbucket,
+a.sb.brown.bitbucket,
+.sb.brown a.bitbucket,
+a.sb.black.bitbucket,
+.sb.black a.bitbucket,
+a.sb.gray.bitbucket,
+.sb.gray a.bitbucket {
+	background-image: url('../images/white_bitbucket.png');
 }
 
 

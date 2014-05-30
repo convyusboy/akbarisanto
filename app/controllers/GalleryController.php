@@ -17,7 +17,7 @@ class GalleryController extends BaseController {
 
 	public function getIndex()
 	{
-        $galleries = Work::all();
+        $galleries = Gallery::all();
         return View::make('gallery.index')->with('galleries', $galleries);
 	}
 
